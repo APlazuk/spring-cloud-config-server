@@ -13,6 +13,5 @@ jobs:
         run: |
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
-            -H "Authorization: token ${{ secrets.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 }}" \
             -d '{"event_type": "actuator-refresh"}' \
             https://api.github.com/repos/APlazuk/ms1/dispatches
