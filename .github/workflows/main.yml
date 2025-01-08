@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Wywołanie endpointu refresh
         run: |
-          curl -X POST http://localhost:8080/actuator/refresh
+          curl -X POST https://bf3b-31-0-24-193.ngrok-free.app/actuator/refresh
