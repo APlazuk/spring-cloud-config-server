@@ -1,0 +1,14 @@
+name: Trigger Local Refresh
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  refresh:
+    runs-on: self-hosted
+    steps:
+      - name: Wywołanie endpointu refresh
+        run: |
+          curl -X POST http://localhost:8080/actuator/refresh
