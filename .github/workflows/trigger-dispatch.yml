@@ -14,4 +14,4 @@ jobs:
           curl -X POST \
             -H "Accept: application/vnd.github.v3+json" \
             -d '{"event_type": "actuator-refresh"}' \
-            https://api.github.com/repos/APlazuk/ms1/dispatches
+            https://bf3b-31-0-24-193.ngrok-free.app/actuator/refresh
