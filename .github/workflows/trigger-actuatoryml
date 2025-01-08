@@ -9,6 +9,6 @@ jobs:
   trigger-dispatch:
     runs-on: ubuntu-latest
     steps:
-      - name: Call GitHub API to trigger webhook
+      - name: Call GitHub API to trigger actuator
         run: |
           curl --location --request POST 'https://bf3b-31-0-24-193.ngrok-free.app/actuator/refresh'
