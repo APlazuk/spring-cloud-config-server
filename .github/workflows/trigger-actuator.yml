@@ -12,9 +12,3 @@ jobs:
       - name: Call GitHub API to trigger actuator
         run: |
           curl --location --request POST 'https://bf3b-31-0-24-193.ngrok-free.app/actuator/refresh'
-      - name: Set Secrets 
-      - shell: bash
-        env:
-          SUPER_SECRET: ${{ secrets.DB_URL }}
-        run: |
-          example-command "$DB_URL"
