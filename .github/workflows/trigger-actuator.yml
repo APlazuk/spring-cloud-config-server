@@ -12,10 +12,8 @@ jobs:
       - name: Call GitHub API to trigger actuator
         run: |
           curl --location --request POST 'https://bf3b-31-0-24-193.ngrok-free.app/actuator/refresh'
-      - name: Build with Maven
+      - name: Set Secrets
         env:
           DB_URL: ${{ secrets.DB_URL }}
           DB_USERNAME: ${{ secrets.DB_USERNAME }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
-        run: |
-          mvn clean install
